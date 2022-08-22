@@ -1,3 +1,15 @@
 ﻿// Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+Console.Write("Четные числа от 1 до введенного числа: ");
+while(count <= number)
+{
+    if(count % 2 == 0)
+    {
+    Console.Write(count);
+    Console.Write(" ");
+    }
+    count++;
+}
